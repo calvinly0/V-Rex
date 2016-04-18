@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Threading;
 
 public class SpawnCoins : MonoBehaviour
 {
@@ -7,25 +8,21 @@ public class SpawnCoins : MonoBehaviour
     // Optional if the object should spin while it falls
     public float spinSpeed = 100.0f;
     public Transform[] coinSpawns;
+    public int coinNumber = 100;
     public GameObject coin;
 
     void Start()
     {
-        Spawn();
+        // Set interval for falling
+        float startIn = 0;
+        float every = 1;
+        // Repeat behavior
+        InvokeRepeating("Spawn", startIn, every);
     }
 
     void Spawn()
     {
-        for (int i = 0; i < coinSpawns.Length; i++)
-        {
-            int coinFlip = Random.Range(0, 2);
-            if (coinFlip > 0)
-            {
-                // Spawn new coin at top of screen
-                Instantiate(coin, new Vector3(Random.Range(-6f, 6f), 10f, 0f), Quaternion.identity);
-
-            }
-        }
+      Instantiate(coin, new Vector3(Random.Range(-6f, 6f), 14f, 0f), Quaternion.identity);
     }
 
     void Update()

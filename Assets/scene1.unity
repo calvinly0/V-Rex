@@ -212,6 +212,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 153319265}
   - 114: {fileID: 153319264}
+  - 114: {fileID: 153319266}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -236,10 +237,6 @@ MonoBehaviour:
   horizontalMax: 14
   verticalMin: -6
   verticalMax: 6
-  fallSpeed: 8
-  spinSpeed: 100
-  coinSpawns: []
-  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!4 &153319265
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +249,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &153319266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153319263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19107bae642674635a9fa63a9fb14962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 0
+  spinSpeed: 0
+  coinSpawns:
+  - {fileID: 422683155}
+  - {fileID: 422683155}
+  - {fileID: 422683155}
+  - {fileID: 422683155}
+  coinNumber: 100
+  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!1 &214850773
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,25 +409,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &422683150 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
+--- !u!4 &422683155 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 402002, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
   m_PrefabInternal: {fileID: 260238901}
---- !u!114 &422683151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 422683150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19107bae642674635a9fa63a9fb14962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallSpeed: 8
-  spinSpeed: 100
-  coinSpawns: []
-  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!1 &423153815
 GameObject:
   m_ObjectHideFlags: 0
