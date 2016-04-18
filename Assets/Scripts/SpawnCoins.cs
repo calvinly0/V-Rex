@@ -22,7 +22,7 @@ public class SpawnCoins : MonoBehaviour
 
     void Spawn()
     {
-      Instantiate(coin, new Vector3(Random.Range(-6f, 6f), 14f, 0f), Quaternion.identity);
+      Instantiate(coin, new Vector3(Random.Range(-12f, 12f), 14f, 0f), Quaternion.identity);
     }
 
     void Update()
@@ -30,7 +30,9 @@ public class SpawnCoins : MonoBehaviour
         transform.Translate(Vector3.down * fallSpeed * Time.deltaTime, Space.World);
         transform.Rotate(Vector3.forward, spinSpeed * Time.deltaTime);
 
-        // Need additional script to destroy coin  if it falls past the lower boundary on the y-axis
+        // Destroys coin if it falls past a certain threshold to avoid excess memory consumption
+        Destroy(this.coin, 5);
+
     }
 
 }
