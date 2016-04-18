@@ -58,7 +58,6 @@ GameObject:
   - 61: {fileID: 6138758}
   - 50: {fileID: 5000118}
   - 114: {fileID: 11481210}
-  - 114: {fileID: 11413736}
   m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
@@ -181,22 +180,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!114 &11413736
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19107bae642674635a9fa63a9fb14962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawns:
-  - {fileID: 461374}
-  - {fileID: 479968}
-  - {fileID: 423890}
-  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!114 &11481210
 MonoBehaviour:
   m_ObjectHideFlags: 1

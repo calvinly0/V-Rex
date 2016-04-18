@@ -236,6 +236,10 @@ MonoBehaviour:
   horizontalMax: 14
   verticalMin: -6
   verticalMax: 6
+  fallSpeed: 8
+  spinSpeed: 100
+  coinSpawns: []
+  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!4 &153319265
 Transform:
   m_ObjectHideFlags: 0
@@ -259,7 +263,6 @@ GameObject:
   - 212: {fileID: 214850778}
   - 50: {fileID: 214850777}
   - 61: {fileID: 214850776}
-  - 114: {fileID: 214850774}
   m_Layer: 12
   m_Name: env_logPlatform1
   m_TagString: ground
@@ -267,22 +270,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &214850774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 214850773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19107bae642674635a9fa63a9fb14962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinSpawns:
-  - {fileID: 1543500967}
-  - {fileID: 477063411}
-  - {fileID: 1213760106}
-  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!61 &214850776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -405,6 +392,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &422683150 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
+  m_PrefabInternal: {fileID: 260238901}
+--- !u!114 &422683151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422683150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19107bae642674635a9fa63a9fb14962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 8
+  spinSpeed: 100
+  coinSpawns: []
+  coin: {fileID: 120488, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
 --- !u!1 &423153815
 GameObject:
   m_ObjectHideFlags: 0
