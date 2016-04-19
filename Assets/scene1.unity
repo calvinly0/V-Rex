@@ -878,6 +878,7 @@ GameObject:
   - 58: {fileID: 1320711404}
   - 95: {fileID: 1320711403}
   - 114: {fileID: 1320711402}
+  - 114: {fileID: 1320711408}
   m_Layer: 9
   m_Name: hero
   m_TagString: Player
@@ -992,6 +993,18 @@ Transform:
   - {fileID: 1420092418}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1320711408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320711401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbae7dac3b7046569b92abc5416e775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinIconTexture: {fileID: 2800000, guid: d235556d311cd497b993de7aa11961d4, type: 3}
 --- !u!1 &1420092417
 GameObject:
   m_ObjectHideFlags: 0
