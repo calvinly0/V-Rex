@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlatformFall : MonoBehaviour {
 
-	public float fallDelay = 1f;
+	public float fallDelay = 3f;
 
 
 	private Rigidbody2D rb2d;
