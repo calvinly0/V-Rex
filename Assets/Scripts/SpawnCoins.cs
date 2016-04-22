@@ -31,7 +31,7 @@ public class SpawnCoins : MonoBehaviour
         transform.Rotate(Vector3.forward, spinSpeed * Time.deltaTime);
 
         // Destroys coin if it falls past a certain threshold to avoid excess memory consumption
-        Destroy(this.coin, 5);
+		DestroyImmediate(this.coin, true);
 
     }
 
