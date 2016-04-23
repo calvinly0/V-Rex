@@ -2,6 +2,7 @@
 */metadata/*
 */Temp/*
 *.meta
+*.sln
 
 # Object files
 *.o
