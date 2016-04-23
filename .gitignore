@@ -1,6 +1,7 @@
 *.DS_Store
 */metadata/*
 */Temp/*
+*.meta
 
 # Object files
 *.o
