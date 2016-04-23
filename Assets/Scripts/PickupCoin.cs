@@ -4,12 +4,13 @@ using System.Collections;
 public class PickupCoin : MonoBehaviour {
 
 	public Texture2D coinIconTexture;
+	public Texture2D steakIconTexture;
 	private int coinCount;
 
 	// Use this for initialization
 	void Start ()
 	{
-		coinCount = 0;
+		coinCount = 50;
 	}
 
 	// Update is called once per frame
@@ -20,8 +21,15 @@ public class PickupCoin : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		// Increment score by 1 for every coin collected
-		coinCount++;
+		if (gameObject.name == "steak") {
+			coinCount--;
+			if (coinCount < 0) {
+				coinCount = 0; //this should be changed so that he dies...
+			}
+		} else {
+			// Increment score by 1 for every coin collected
+			coinCount++;
+		}
 		if (other.gameObject.CompareTag("Player"))
 		{
 			Destroy(gameObject);

@@ -43,4 +43,8 @@ error_test.txt
 
 # Tweet Log
 *templateLog.txt
+<<<<<<< HEAD
 ~    
+=======
+~                   
+>>>>>>> 810475471a3b58513d8e9b3db3506ff597fa8643
