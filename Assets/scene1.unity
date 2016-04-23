@@ -231,12 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1f97361b4304cd19d94da5cd438cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPlatforms: 20
   platform: {fileID: 214850773}
-  horizontalMin: 7.5
-  horizontalMax: 14
-  verticalMin: -6
-  verticalMax: 6
 --- !u!4 &153319265
 Transform:
   m_ObjectHideFlags: 0
@@ -280,6 +275,7 @@ GameObject:
   - 212: {fileID: 214850778}
   - 50: {fileID: 214850777}
   - 61: {fileID: 214850776}
+  - 114: {fileID: 214850774}
   m_Layer: 12
   m_Name: env_logPlatform1
   m_TagString: ground
@@ -287,6 +283,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &214850774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 214850773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09d6267ffebe43168186e164d04c70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallDelay: 1
 --- !u!61 &214850776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1016,7 +1024,7 @@ GameObject:
   - 212: {fileID: 1420092419}
   m_Layer: 0
   m_Name: char_dino
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
