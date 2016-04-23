@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{2DEF6600-60D5-152F-DE81-A436F0161B9E}") = "V-Rex", "Assembly-CSharp.csproj", "{CAC31E4F-4B25-D4C8-0246-DC32E7B82883}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAC31E4F-4B25-D4C8-0246-DC32E7B82883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC31E4F-4B25-D4C8-0246-DC32E7B82883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC31E4F-4B25-D4C8-0246-DC32E7B82883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC31E4F-4B25-D4C8-0246-DC32E7B82883}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

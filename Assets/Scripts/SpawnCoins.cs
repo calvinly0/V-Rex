@@ -11,6 +11,9 @@ public class SpawnCoins : MonoBehaviour
     public int coinNumber = 100;
     public GameObject coin;
 
+	//Steaks
+	public GameObject steak;
+
     void Start()
     {
         // Set interval for falling
@@ -22,7 +25,12 @@ public class SpawnCoins : MonoBehaviour
 
     void Spawn()
     {
-      Instantiate(coin, new Vector3(Random.Range(-12f, 12f), 14f, 0f), Quaternion.identity);
+		int choice = Random.Range (0, 25);
+		if (choice <= 20) {
+			Instantiate (coin, new Vector3 (Random.Range (-12f, 12f), 14f, 0f), Quaternion.identity);
+		} else {
+			Instantiate (steak, new Vector3 (Random.Range (-12f, 12f), 14f, 0f), Quaternion.identity);
+		}
     }
 
     void Update()
@@ -31,7 +39,7 @@ public class SpawnCoins : MonoBehaviour
         transform.Rotate(Vector3.forward, spinSpeed * Time.deltaTime);
 
         // Destroys coin if it falls past a certain threshold to avoid excess memory consumption
-		DestroyImmediate(this.coin, true);
+		Destroy(this.coin, 5);
 
     }
 
