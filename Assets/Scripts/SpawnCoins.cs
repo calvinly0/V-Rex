@@ -8,8 +8,9 @@ public class SpawnCoins : MonoBehaviour
     // Optional if the object should spin while it falls
     public float spinSpeed = 100.0f;
     public Transform[] coinSpawns;
-    public int coinNumber = 100;
+    public int coinNumber = 10000;
     public GameObject coin;
+	private Vector2 heroPosition;
 
 	//Steaks
 	public GameObject steak;
@@ -26,10 +27,14 @@ public class SpawnCoins : MonoBehaviour
     void Spawn()
     {
 		int choice = Random.Range (0, 25);
+		heroPosition = GameObject.Find ("char_dino").transform.position;
+		heroPosition.y += 14f;
+		heroPosition.x += Random.Range (-12f, 12f);
+
 		if (choice <= 20) {
-			Instantiate (coin, new Vector3 (Random.Range (-12f, 12f), 14f, 0f), Quaternion.identity);
+				Instantiate (coin, new Vector2 (heroPosition.x, heroPosition.y), Quaternion.identity);
 		} else {
-			Instantiate (steak, new Vector3 (Random.Range (-12f, 12f), 14f, 0f), Quaternion.identity);
+				Instantiate (steak, new Vector2 (heroPosition.x, heroPosition.y), Quaternion.identity);
 		}
     }
 
