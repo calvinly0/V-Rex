@@ -295,7 +295,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d235556d311cd497b993de7aa11961d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cde0c057c47a476cb965467b91898ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   - {fileID: 422683155}
   coinNumber: 10000
   coin: {fileID: 163068, guid: e4b61545b35404a748ad50884e2689ae, type: 2}
-  steak: {fileID: 0}
+  steak: {fileID: 100444, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
 --- !u!1 &160182516
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +741,11 @@ Prefab:
       propertyPath: m_Radius
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 21248360, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9cde0c057c47a476cb965467b91898ac,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17c1a6fdb06924a4b89706404f102bee, type: 2}
   m_IsPrefabParent: 0
@@ -2081,6 +2086,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1001 &1796964130
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 100444, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_Name
+      value: steak
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 407652, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883782, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 605bcd969c7a144ee9aa3772d1925bae, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1834148661
 GameObject:
   m_ObjectHideFlags: 0
