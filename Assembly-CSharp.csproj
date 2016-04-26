@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\SimplePlatformController.cs" />
      <Compile Include="Assets\Scripts\SpawnCoins.cs" />
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

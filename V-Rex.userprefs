@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SimplePlatformController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/SpawnManager.cs" Line="29" Column="29" />
+      <File FileName="Assets/Scripts/PickupCoin.cs" Line="48" Column="41" />
+      <File FileName="Assets/Scripts/SpawnManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SimplePlatformController.cs" Line="9" Column="28" />
       <File FileName="Assets/Scripts/PlatformFall.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Reset.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PickupCoin.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SpawnCoins.cs" Line="34" Column="19" />
+      <File FileName="Assets/Scripts/Reset.cs" Line="20" Column="4" />
+      <File FileName="Assets/Scripts/SpawnCoins.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="19" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

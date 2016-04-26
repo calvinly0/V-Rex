@@ -10,12 +10,13 @@ public class Reset : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 	}
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
+		
 		if (other.gameObject.CompareTag("Player"))
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
+			Application.LoadLevel ("gameOver");
 	}
 }
